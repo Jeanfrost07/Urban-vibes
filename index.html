@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Vibes | Varanasi Dance Class</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: rgba(18, 18, 18, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #f97316; /* Sunset Orange representing Varanasi */
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #f97316;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            /* Placeholder background - REPLACE the URL inside url() with your own image link */
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), 
+                        url('Polish_20260429_115905295.png') center/cover no-repeat;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 40px;
+            color: #cccccc;
+        }
+
+        .cta-btn {
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: #f97316;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .cta-btn:hover {
+            background-color: #ea580c;
+            transform: translateY(-3px);
+        }
+
+        /* Information Section */
+        .info-section {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: #1a1a1a;
+        }
+
+        .info-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #f97316;
+        }
+
+        .info-section p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #aaaaaa;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000000;
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 2px solid #f97316;
+        }
+
+        footer p {
+            color: #777777;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 15px;
+            }
+            .nav-links {
+                margin-top: 15px;
+                gap: 15px;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">URBAN <span>VIBES</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Move. Connect. <br><span>Feel the Beat.</span></h1>
+        <p>Dance in the Heart of the Ghats. Explore Contemporary & Hip-Hop amidst the spirit of Varanasi.</p>
+        <a href="classes.html" class="cta-btn">Explore Classes</a>
+    </header>
+
+    <section class="info-section">
+        <h2>Find Your Rhythm</h2>
+        <p>Whether you are a beginner taking your first steps or an advanced dancer looking to refine your technique, Urban Vibes offers a space to express yourself freely. We blend modern street styles with the timeless energy of Varanasi.</p>
+    </section>
+
+    <footer>
+        <p>📍 Dashashwamedh Ghat, Varanasi, Uttar Pradesh</p>
+    </footer>
+
+</body>
+</html>
